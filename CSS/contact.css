@@ -49,6 +49,10 @@
     color:black;
     
 }
+.contact-form p{
+    line-height: 20px;    
+
+}
 
 .button {
     padding-left: 97px ;
