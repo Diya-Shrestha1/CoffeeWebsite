@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%; 
+    height: 100vh;
+    background-color:#1C1E26;
+    font-family:serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display:inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    border: solid;
+    transition: .5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-left: 120px;
+    color: white;
+}
+
+.myself h1{
+    font-size: 65px;
+    padding-top: 15%;
+}
+
+.myself span{
+    color: rgb(156,92,45);
+    font-size: 75px;
+    font-weight: 700;
+    
+}
+
+.myself p {
+    font-size: 30px;
+    color: #74C042;
+    padding-left: 2%;
+}
+
+.img img{
+    height: 370px;
+}
+
+.show .btnLogin-popup{
+    width:100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.show .btnLogin-popup:hover{
+    background: #fff;
+    color: black;
+}
+
+
+.btn{
+    width: 80%;
+    color: white;
+    height:35px;
+    background: #162938;
+    border: none;
+    outline:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media (max-width: 1048px){
+    .logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+}
+
+@media (max-width:360px){
+    .logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    nav #icon{
+        font-size: 20px;
+
+    }
+}
